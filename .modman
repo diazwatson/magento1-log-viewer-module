@@ -1,0 +1,9 @@
+# Diazwatson_LogViewer
+#
+# @category    Diazwatson
+# @package     Diazwatson_LogViewer
+# @Date        05/2016
+# @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+# @author      @diazwatson
+
+app                 app/code/community/Diazwatson/LogViewer
