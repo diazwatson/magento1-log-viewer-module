@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Diazwatson_LogViewer
+ *
+ * @category    Diazwatson
+ * @package     Diazwatson_LogViewer
+ * @Date        05/2016
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ * @author      @diazwatson
+ */-->
+
+<config>
+    <modules>
+        <Diazwatson_LogViewer>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Diazwatson_LogViewer>
+    </modules>
+</config>

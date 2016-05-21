@@ -1,0 +1,2 @@
+div#log-view-cont label {display:block;}
+iframe#log-view { background: #BFBFBF; width: 100%; height:800px; border:1px solid #CCC; margin-top:10px; }

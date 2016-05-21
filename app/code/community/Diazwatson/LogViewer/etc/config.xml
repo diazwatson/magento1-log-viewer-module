@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Diazwatson_LogViewer
+ *
+ * @category    Diazwatson
+ * @package     Diazwatson_LogViewer
+ * @Date        05/2016
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ * @author      @diazwatson
+ */-->
+
+<config>
+    <modules>
+        <Diazwatson_LogViewer>
+            <version>0.1.0</version>
+        </Diazwatson_LogViewer>
+    </modules>
+    <global>
+        <blocks>
+            <logviewer>
+                <class>Diazwatson_LogViewer_Block</class>
+            </logviewer>
+        </blocks>
+        <helpers>
+            <logviewer>
+                <class>Diazwatson_LogViewer_Helper</class>
+            </logviewer>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Diazwatson_LogViewer before="Mage_Adminhtml">Diazwatson_LogViewer_Adminhtml</Diazwatson_LogViewer>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <diazwatson_logviewer>
+                    <file>diazwatson/logviewer.xml</file>
+                </diazwatson_logviewer>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

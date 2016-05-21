@@ -6,4 +6,9 @@
 # @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 # @author      @diazwatson
 
-app                 app/code/community/Diazwatson/LogViewer
+app/code/community/Diazwatson/LogViewer                                 app/code/community/Diazwatson/LogViewer
+app/etc/modules/Diazwatson_LogViewer.xml                                app/etc/modules/Diazwatson_LogViewer.xml
+app/design/adminhtml/default/default/layout/diazwatson/logviewer.xml    app/design/adminhtml/default/default/layout/diazwatson/logviewer.xml
+app/design/adminhtml/default/default/template/diazwatson/logs.phtml     app/design/adminhtml/default/default/template/diazwatson/logs.phtml
+skin/adminhtml/default/default/diazwatson/css/logviewer.css             skin/adminhtml/default/default/diazwatson/css/logviewer.css
+skin/adminhtml/default/default/diazwatson/js/logviewer.js               skin/adminhtml/default/default/diazwatson/js/logviewer.js

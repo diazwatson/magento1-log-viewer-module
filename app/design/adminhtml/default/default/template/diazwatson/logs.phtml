@@ -1,0 +1,19 @@
+<?php
+/**
+ * Diazwatson_LogViewer
+ *
+ * @category    Diazwatson
+ * @package     Diazwatson_LogViewer
+ * @Date        05/2016
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ * @author      @diazwatson
+ */
+?>
+<?php /** @var Diazwatson_LogViewer_Block_Adminhtml_Logs $this */ ?>
+<div id="log-view-cont">
+    <?php echo $this->getLogFilesSelect(); ?>
+    
+    <iframe id="log-view" src="<?php echo $this->getTailUrl(); ?>">
+        <p><?php echo $this->__('Seems like your browser does not support iframes :('); ?></p>
+    </iframe>
+</div>

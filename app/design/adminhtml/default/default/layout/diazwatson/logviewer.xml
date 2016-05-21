@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Diazwatson_LogViewer
+ *
+ * @category    Diazwatson
+ * @package     Diazwatson_LogViewer
+ * @Date        05/2016
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ * @author      @diazwatson
+ */-->
+<layout>
+    <adminhtml_log_viewer_index>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>diazwatson/css/logviewer.css</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>diazwatson/js/logviewer.js</name>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="logviewer/adminhtml_logs"
+                   name="diazwatson.logs"
+                   template="diazwatson/logs.phtml">
+            </block>
+        </reference>
+    </adminhtml_log_viewer_index>
+</layout>
