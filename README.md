@@ -25,7 +25,7 @@ modman clone git@github.com:diazwatson/LogViewer.git
 With modgit you can effortlessly grab latest changes from github.
 ```
 cd [magento root folder]
-modgit update logviewer
+modgit update LogViewer
 ```
 - Flush Magento's cache
 
@@ -38,7 +38,7 @@ modgit update logviewer
 ```bash
 cd [magento root folder]
 modgit init
-modgit clone git@github.com:diazwatson/LogViewer.git
+modgit add LogViewer git@github.com:diazwatson/LogViewer.git
 ```
 - Flush Magento's cache 
 
@@ -46,7 +46,7 @@ modgit clone git@github.com:diazwatson/LogViewer.git
 With modman you can effortlessly grab latest changes from github.
 ```
 cd [magento root folder]
-modman update logviewer
+modgit update LogViewer
 ```
 - Flush Magento's cache
 
