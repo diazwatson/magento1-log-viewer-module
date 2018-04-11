@@ -31,7 +31,10 @@ class Diazwatson_LogViewer_Block_Adminhtml_Logs extends Mage_Core_Block_Template
                 }
 
                 if (preg_match('/[(.log)(.logs)]$/', $fileInfo->getFilename())) {
-                    $logFiles [] = array('file' => $fileInfo->getPathname(), 'filename' => $fileInfo->getFilename());
+                    $logFiles[$fileInfo->getFilename()] = array(
+                        'file' => $fileInfo->getPathname(),
+                        'filename' => $fileInfo->getFilename()
+                    );
                 }
             }
         }
@@ -39,6 +42,8 @@ class Diazwatson_LogViewer_Block_Adminhtml_Logs extends Mage_Core_Block_Template
         if (empty($logFiles)) {
             return $this->__('No log files found');
         }
+        
+        ksort($logFiles);
 
         $html = '<label for="rl-log-switcher">' . $this->__('Please, choose a file:') . '</label><select id="rl-log-switcher" name="rl-log-switcher"><option value=""></option>';
 
